@@ -1,43 +1,22 @@
-{{!
-Це код container файлу для index сторінки,
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
-}}
-
 <div class="page">
-    <header class="header">
-        <div class="header__top">
-            <div class="header__list">
-                <a href="#" class="header__link">Home</a>
-                <a href="#" class="header__link">About</a>
-                <a href="#" class="header__link">Contact</a>
-            </div>
-            <button class="header__button header__button--open"></button>
+    <main class="slider">
+        <div class="slider__content">
+            <div><a href="#" class="open-popup"></a><div class="slider__item" data-video-id="824804225"><iframe class="popup__video" src="https://player.vimeo.com/video/824804225?autoplay=0" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div></div>
+            <div><a href="#" class="open-popup"></a><div class="slider__item" data-video-id="824804225"><iframe class="popup__video" src="https://player.vimeo.com/video/824804225?autoplay=0" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div></div>
+            <div><a href="#" class="open-popup"></a><div class="slider__item" data-video-id="824804225"><iframe class="popup__video" src="https://player.vimeo.com/video/824804225?autoplay=0" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div></div>
+            <div><a href="#" class="open-popup"></a><div class="slider__item" data-video-id="824804225"><iframe class="popup__video" src="https://player.vimeo.com/video/824804225?autoplay=0" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div></div>
+            <div><a href="#" class="open-popup"></a><div class="slider__item" data-video-id="824804225"><iframe class="popup__video" src="https://player.vimeo.com/video/824804225?autoplay=0" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div></div>
+            <div><a href="#" class="open-popup"></a><div class="slider__item" data-video-id="824804225"><iframe class="popup__video" src="https://player.vimeo.com/video/824804225?autoplay=0" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div></div>
+            <div><a href="#" class="open-popup"></a><div class="slider__item" data-video-id="824804225"><iframe class="popup__video" src="https://player.vimeo.com/video/824804225?autoplay=0" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div></div>
+            <div><a href="#" class="open-popup"></a><div class="slider__item" data-video-id="824804225"><iframe class="popup__video" src="https://player.vimeo.com/video/824804225?autoplay=0" frameborder="0" allow="fullscreen" allowfullscreen></iframe></div></div>
         </div>
-        <div class="header__wrapper">
-            <div class="header__bottom">
-                <div class="header__list header__list--top">
-                    <a href="#" class="header__link">Service</a>
-                    <a href="#" class="header__link">Privacy</a>
-                    <a href="#" class="header__link">Clients</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-
-<main class="slider">
-     <div class="slifer__content">
-        <img src="https:/picsum.photos/600/400" class="slider__item" width="100%" height="400">
-        <img src="https:/picsum.photos/600/400" class="slider__item" width="100%" height="400">
-        <img src="https:/picsum.photos/600/400" class="slider__item" width="100%" height="400">
-        <img src="https:/picsum.photos/600/400" class="slider__item" width="100%" height="400">
+        <button class="slider__button slider__button--left"></button>
+        <button class="slider__button slider__button--right"></button>
+    </main>
      </div>
-     <button class="slider__button slider__button--left"></button>
-     <button class="slider__button slider__button--right"></button>
-</main>
-</div>
-{{!
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
-}}
+<div class="popup__bg"> 
+    <form class="popup">
+        <img class="close-popup">
+            <iframe class="popup__video" src="https://player.vimeo.com/video/824804225?autoplay=1" frameborder="0" allow="fullscreen"></iframe>
+    </form>
+</div> 
